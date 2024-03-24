@@ -33,5 +33,6 @@ Red Hat JBoss Application Server（AS，也称WildFly）是美国红帽（Red Ha
 http://ip:port/jbossmq-httpil/HTTPServerILServlet
 如果出现则代表存在漏洞
 
+其他复现和上边2之后一样
 
 
